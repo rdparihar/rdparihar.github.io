@@ -15,10 +15,10 @@
 .vbtns .btn, .vbtns .btn-large {
     width: 200px;
 }
-<style>…</style>.btn-rnd {
+.btn-rnd {
     border-radius: 30px;
     text-transform: none;
 }
-<style>…</style>.font-green {
+.font-green {
     color: #12c5a2;
 }
