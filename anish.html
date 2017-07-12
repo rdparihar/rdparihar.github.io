@@ -1,0 +1,143 @@
+<html>
+<head>
+<style>
+
+body {
+  background:#fff; /*#d2d2d2; #E75B47*/;
+  background-image: -webkit-linear-gradient(-89deg, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.00) 100%);
+  background-image: -moz-linear-gradient(-89deg, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.00) 100%);
+  background-image: -o-linear-gradient(-89deg, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.00) 100%);
+  background-image: linear-gradient(-89deg, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.00) 100%);
+  text-align: center;
+}
+
+.bolt {
+  fill:hsl(0, 100%, 47%); /*hsl(7, 50%, 38%);*/
+  filter: url(#bolt-inner-shadow);
+}
+
+.bolt.loading {
+  -webkit-animation: light-pulse 1s .125s ease infinite;
+  -moz-animation: light-pulse 3s infinite;
+  animation: light-pulse 1s .125s ease infinite;
+}
+
+@keyframes light-pulse {
+  
+  50%  { fill: hsl(0, 100%, 100%);
+        transform:rotate(26);
+   }
+ 0%  100% { fill: hsl(7, 90%, 48%); }
+}
+
+@-webkit-keyframes light-pulse {
+  1%   { fill: hsl(7, 50%, 38%); }
+  50%  { fill: hsl(7, 50%, 78%); }
+  100% { fill: hsl(7, 50%, 38%); }
+}
+
+@-webkit-keyframes pulse {
+  1%   { -webkit-transform: scale(0.7); }
+  25%  { -webkit-transform: scale(1.1); }
+  45%  { -webkit-transform: scale(0.9); }
+  63%  { -webkit-transform: scale(1.05); }
+  79%  { -webkit-transform: scale(0.95); }
+  100% { -webkit-transform: scale(1.0); }
+}
+
+@keyframes pulse {
+  1%   { transform: scale(0.7); }
+  25%  { transform: scale(1.1); }
+  45%  { transform: scale(0.9); }
+  63%  { transform: scale(1.05); }
+  79%  { transform: scale(0.95); }
+  100% { transform: scale(1.0); }
+}
+</style>
+</head>
+
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="308px" height="167px" style="padding-top:50px;" viewBox="0 0 308 257" version="1.1">
+  <defs>
+    <filter id="bolt-inner-shadow">
+      <feOffset dx="0" dy="0" />
+      <feGaussianBlur
+        stdDeviation="8"
+        result="offset-blur"
+      />
+      <feComposite
+        operator='out'
+        in='SourceGraphic'
+        in2='offset-blur'
+        result='inverse'
+      />
+      <feFlood
+        flood-color='6B2C22'
+        flood-opacity='1'
+        result='color'
+      />
+    
+      <!-- Clip color inside shadow -->
+      <feComposite
+        operator='in'
+        in='color'
+        in2='inverse'
+        result='shadow'
+      />
+    
+      <!-- Put shadow over original object -->
+      <feComposite
+        operator='over'
+        in='shadow'
+        in2='SourceGraphic'
+      />
+    </filter>
+  </defs>
+  
+ 
+  <rect x="100" y="125" width="100" height="100"  class=""
+  style="fill:red;stroke:red;stroke-width:1;fill-opacity:0.9;stroke-opacity:0.9" />
+  <rect x="205" y="125" width="100" height="100"  class=""
+  style="fill:red;stroke:red;stroke-width:1;fill-opacity:0.9;stroke-opacity:0.9" />
+  <rect x="100" y="20" width="100" height="100"  class=""
+  style="fill:red;stroke:red;stroke-width:1;fill-opacity:0.9;stroke-opacity:0.9" />
+  <rect x="226" y="-68" width="100" height="100" id ="rot" transform="rotate(16)"  class="bolt loading"
+  style="fill:red;stroke-width:1;fill-opacity:0.9;stroke-opacity:0.9" />
+ 
+
+  <!--
+  
+  <path d="M12 240.2 L221.733736 6 L165.795158 192.5 L245.547254 191.8 L35.813518 426 L91.7520965 239.5 Z M12 240.2" class="bolt loading">-->
+  <!--
+  
+  <path d="M12 240.2 L221.733736 6 L165.795158 192.5 L245.547254 191.8 L35.813518 426 L91.7520965 239.5 Z M12 240.2" class="bolt loading">-->
+  <!--
+  
+  <path d="M12 240.2 L221.733736 6 L165.795158 192.5 L245.547254 191.8 L35.813518 426 L91.7520965 239.5 Z M12 240.2" class="bolt loading">-->
+  <!--
+  
+  <path d="M12 240.2 L221.733736 6 L165.795158 192.5 L245.547254 191.8 L35.813518 426 L91.7520965 239.5 Z M12 240.2" class="bolt loading">-->
+
+
+
+
+  <!--
+  
+  <path d="M12 240.2 L221.733736 6 L165.795158 192.5 L245.547254 191.8 L35.813518 426 L91.7520965 239.5 Z M12 240.2" class="bolt loading">-->
+</svg>
+<br/>
+<svg height="120" width="400">
+  <text x="50" y="110" fill="black" font-family="Arial"    font-size="125" style="fill:black;stroke:black;stroke-width:0;fill-opacity:0.9;stroke-opacity:0.9">ANISH</text>
+  Sorry, your browser does not support inline SVG.
+</svg><br/>
+ <svg height="100" width="400">
+ <defs>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <text x="50" y="80" fill="black" font-family="Arial" font-size="55" style="letter-spacing:8px;fill-opacity:0.9;">GAUTAM</text>
+  Sorry, your browser does not support inline SVG.
+</svg>
+</body></html>
