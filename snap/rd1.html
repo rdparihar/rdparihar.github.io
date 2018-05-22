@@ -26,23 +26,24 @@
 	
 
 .x {
-    width: 80px;
+    width: 50%;
   	height: 45px;
     background: #fff;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-border-radius: 5px;
+    box-shadow: none;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 margin: 0 0 5px 2px;
-    transition: width 0.6s;
-    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+    transition:  0.5s;
+    transition-property:  box-shadow;
+    transition-timing-function: 0.6s cubic-bezier(0.1, 0.7, 1.0, 0.1);
 }
 .x:hover {
-    width:150px;
+    border: 1px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 .box {
   position: relative;
   display: inline-block;
-	width: 80%;
+  width: 80%;
   height: 45px;
   background-color: #fff;
   border-radius: 5px;
@@ -60,8 +61,7 @@ margin: 0 0 5px 2px;
   top: 0;
   left: 0;
   width: 100%;
-  height: 
-  %;
+  height: %;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   opacity: 0;
   -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -110,61 +110,7 @@ margin: 0 0 5px 2px;
                         <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted  " href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
                         <li class="nav-item m-l-10"> <a class="nav-link sidebartoggler hidden-sm-down text-muted  " href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
                         <!-- Messages -->
-                        <li class="nav-item dropdown mega-dropdown"> <a class="nav-link dropdown-toggle text-muted  " href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-th-large"></i></a>
-                            <div class="dropdown-menu animated zoomIn">
-                                <ul class="mega-dropdown-menu row">
-
-
-                                    <li class="col-lg-3  m-b-30">
-                                        <h4 class="m-b-20">CONTACT US</h4>
-                                        <!-- Contact -->
-                                        <form>
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" id="exampleInputname1" placeholder="Enter Name"> </div>
-                                            <div class="form-group">
-                                                <input type="email" class="form-control" placeholder="Enter email"> </div>
-                                            <div class="form-group">
-                                                <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Message"></textarea>
-                                            </div>
-                                            <button type="submit" class="btn btn-info">Submit</button>
-                                        </form>
-                                    </li>
-                                    <li class="col-lg-3 col-xlg-3 m-b-30">
-                                        <h4 class="m-b-20">List style</h4>
-                                        <!-- List style -->
-                                        <ul class="list-style-none">
-                                            <li><a href="javascript:void(0)"><i class="fa fa-check text-success"></i> This Is Another Link</a></li>
-                                            <li><a href="javascript:void(0)"><i class="fa fa-check text-success"></i> This Is Another Link</a></li>
-                                            <li><a href="javascript:void(0)"><i class="fa fa-check text-success"></i> This Is Another Link</a></li>
-                                            <li><a href="javascript:void(0)"><i class="fa fa-check text-success"></i> This Is Another Link</a></li>
-                                            <li><a href="javascript:void(0)"><i class="fa fa-check text-success"></i> This Is Another Link</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="col-lg-3 col-xlg-3 m-b-30">
-                                        <h4 class="m-b-20">List style</h4>
-                                        <!-- List style -->
-                                        <ul class="list-style-none">
-                                            <li><a href="javascript:void(0)"><i class="fa fa-check text-success"></i> This Is Another Link</a></li>
-                                            <li><a href="javascript:void(0)"><i class="fa fa-check text-success"></i> This Is Another Link</a></li>
-                                            <li><a href="javascript:void(0)"><i class="fa fa-check text-success"></i> This Is Another Link</a></li>
-                                            <li><a href="javascript:void(0)"><i class="fa fa-check text-success"></i> This Is Another Link</a></li>
-                                            <li><a href="javascript:void(0)"><i class="fa fa-check text-success"></i> This Is Another Link</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="col-lg-3 col-xlg-3 m-b-30">
-                                        <h4 class="m-b-20">List style</h4>
-                                        <!-- List style -->
-                                        <ul class="list-style-none">
-                                            <li><a href="javascript:void(0)"><i class="fa fa-check text-success"></i> This Is Another Link</a></li>
-                                            <li><a href="javascript:void(0)"><i class="fa fa-check text-success"></i> This Is Another Link</a></li>
-                                            <li><a href="javascript:void(0)"><i class="fa fa-check text-success"></i> This Is Another Link</a></li>
-                                            <li><a href="javascript:void(0)"><i class="fa fa-check text-success"></i> This Is Another Link</a></li>
-                                            <li><a href="javascript:void(0)"><i class="fa fa-check text-success"></i> This Is Another Link</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
+                        <l
                         <!-- End Messages -->
                     </ul>
                     <!-- User profile and search -->
@@ -183,19 +129,30 @@ margin: 0 0 5px 2px;
                     <ul id="sidebarnav" class="in">
                         <li class="nav-devider"></li>
                             <div class="x">
-                             <li> <a class=" " href="#" ><i class="fa fa-book"></i>Pages </a>
+                                <li> <a class=" " href="#" ><i class="fa fa-book"></i>Pages </a>
                        		 </li>
                        		</div>
-
                         <li>
-                        <a href="#"><div class="box">
-  						<span class="fa fa-link"></span> Link 
-    					</div></a>
+                            <a href="#">
+                                <div class="box">
+      						        <span class="fa fa-link"></span> Link 
+        					    </div>
+                            </a>
+                        </li>
+                        <li class="x"> 
+                            <a class="has-arrow  " href="#" aria-expanded="false">
+                                <i class="fa fa-tachometer"></i>
+                                <span class="hide-menu">Dashboard 
+                                    
+                                </span>
+                            </a>
                         </li>
                        <div class="box">
-                             <li> <a class=" " href="#" ><i class="fa fa-book"></i>Pages </a>
-                       		 </li>
-                       		</div>
+                        <li>
+                            <a class=" " href="#" ><i class="fa fa-book"></i>Pages
+                            </a>
+                        </li>
+                       </div>
                      
                     </ul>
                 </nav>
