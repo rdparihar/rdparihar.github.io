@@ -24,58 +24,26 @@
 <![endif]-->
 <style type="text/css">
 	
-
 .x {
-    width: 80px;
-  	height: 45px;
+    width: 50%;
+    height: 45px;
+    border-radius: 2px;
     background: #fff;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-border-radius: 5px;
-margin: 0 0 5px 2px;
-    transition: width 0.6s;
-    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.0);
+    margin: 5px 0 5px 2px;
+    transition:  0.5s;
+    transition-property:  box-shadow;
+    transition-timing-function: 1s cubic-bezier(0.1, 0.7, 1.0, 0.1);
 }
 .x:hover {
-    width:150px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-}
-.box {
-  position: relative;
-  display: inline-block;
-	width: 80%;
-  height: 45px;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border: #ef5350 1px;
+   box-shadow: 0 2px 20px 0 rgba(0,0,1,0.15)
+  /* box-shadow: 0 3px 15px #ef5350;*/
 }
 
-.box::after {
-  content: "";
-  border-radius: 5px;
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 
-  %;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  opacity: 0;
-  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
 
-.box:hover {
-  -webkit-transform: scale(1.25, 1.25);
-  transform: scale(1.25, 1.25);
-}
 
-.box:hover::after {
-    opacity: 1;
-}
+
 
 
 </style>
@@ -182,20 +150,39 @@ margin: 0 0 5px 2px;
                 <nav class="sidebar-nav active">
                     <ul id="sidebarnav" class="in">
                         <li class="nav-devider"></li>
-                            <div class="x">
-                             <li> <a class=" " href="#" ><i class="fa fa-book"></i>Pages </a>
-                       		 </li>
-                       		</div>
-
-                        <li>
-                        <a href="#"><div class="box">
-  						<span class="fa fa-link"></span> Link 
-    					</div></a>
+                        <li class="x"> 
+                            <a  href="#" >
+                                <i class="fa fa-quora"></i> 
+                                <span class="hide-menu">Quora </span>
+                            </a>
                         </li>
-                       <div class="box">
-                             <li> <a class=" " href="#" ><i class="fa fa-book"></i>Pages </a>
-                       		 </li>
-                       		</div>
+                        <li class="x"> 
+                            <a  href="#" "">
+                                <i class="fa fa-ravelry"></i>
+                                <span class="hide-menu">Ravelry</span>
+                            </a>
+                        </li>
+                        <li class="x"> 
+                            <a  href="#" >
+                                <i class="fa fa-birthday-cake"></i> 
+                                <span class="hide-menu">Birthday </span>
+                            </a>
+                        </li>
+                        <li class="x"> 
+                            <a  href="#" "">
+                                <i class="fa fa-paypal"></i>
+                                <span class="hide-menu">PayPal</span>
+                            </a>
+                        </li>
+                            
+
+                        <li class="x"> <a class=" " href="#" aria-expanded="false">
+                            <i class="fa fa-tachometer"></i><span class="hide-menu">Dashboard </a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="index.html">Ecommerce </a></li>
+                                <li><a href="index1.html">Analytics </a></li>
+                            </ul>
+                        </li>
                      
                     </ul>
                 </nav>

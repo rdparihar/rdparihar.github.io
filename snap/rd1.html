@@ -80,6 +80,9 @@
 
 
 </style>
+
+
+
 </head>
 
 <body class="fix-header fix-sidebar">
@@ -188,8 +191,14 @@
                             <div class="card-body">
                                 <h4 class="card-title">Data Export</h4>
                                 <h6 class="card-subtitle">Export data to Copy, CSV, Excel, PDF & Print</h6>
-                                <div class="table-responsive m-t-40">
+                                <div class="table-responsive m-t-40" >
+                                    <input type="button" class="btn btn-danger btn-flat m-b-10 m-l-5" onclick="CreateTableFromJSON()" value="View List" />
+                                    <div id="showData"></div>
+                                </div>
+                                <div class="table-responsive m-t-40" >
+                                    <div id="example23_wrapper" class="dataTables_wrapper"><div class="dt-buttons"><a class="dt-button buttons-copy buttons-html5" tabindex="0" aria-controls="example23" href="#"><span>Copy</span></a><a class="dt-button buttons-csv buttons-html5" tabindex="0" aria-controls="example23" href="#"><span>CSV</span></a><a class="dt-button buttons-excel buttons-html5" tabindex="0" aria-controls="example23" href="#"><span>Excel</span></a><a class="dt-button buttons-pdf buttons-html5" tabindex="0" aria-controls="example23" href="#"><span>PDF</span></a><a class="dt-button buttons-print" tabindex="0" aria-controls="example23" href="#"><span>Print</span></a></div><div id="example23_filter" class="dataTables_filter"><label>Search:<input type="search" class="" placeholder="" aria-controls="example23"></label></div></div>
                                     <table id="example23" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
+                                        
                                         <thead>
                                             <tr>
                                                 <th>Name</th>
@@ -200,6 +209,7 @@
                                                 <th>Salary</th>
                                             </tr>
                                         </thead>
+                                      
                                         <tfoot>
                                             <tr>
                                                 <th>Name</th>
@@ -211,43 +221,33 @@
                                             </tr>
                                         </tfoot>
                                         <tbody>
-                                            <tr>
-                                                <td>AAA Singh</td>
-                                                <td>System Architect</td>
-                                                <td>Edinburgh</td>
-                                                <td>61</td>
-                                                <td>2011/04/25</td>
-                                                <td>
-                                                	<button type="button" class="btn btn-warning m-b-10 m-l-5">Visit Page</button>
-													</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Garrett Winters</td>
-                                                <td>Accountant</td>
+                                       <tr>
+                                                <td>Ankur Jain</td>
+                                                <td>Application Support Analyst</td>
                                                 <td>Tokyo</td>
                                                 <td>63</td>
                                                 <td>2011/07/25</td>
                                                 <td>$170,750</td>
                                             </tr>
                                             <tr>
-                                                <td>Ashton Cox</td>
-                                                <td>Junior Technical Author</td>
+                                                <td> Ankit Dubey</td>
+                                                <td>Application Support Analyst</td>
                                                 <td>San Francisco</td>
                                                 <td>66</td>
                                                 <td>2009/01/12</td>
                                                 <td>$86,000</td>
                                             </tr>
                                             <tr>
-                                                <td>Cedric Kelly</td>
-                                                <td>Senior Javascript Developer</td>
+                                                <td>Ankit Singhai </td>
+                                                <td>Application Support Analystr</td>
                                                 <td>Edinburgh</td>
                                                 <td>22</td>
                                                 <td>2012/03/29</td>
                                                 <td>$433,060</td>
                                             </tr>
                                             <tr>
-                                                <td>Airi Satou</td>
-                                                <td>Accountant</td>
+                                                <td>Arvind Lodhi</td>
+                                                <td>Application Support Analyst</td>
                                                 <td>Tokyo</td>
                                                 <td>33</td>
                                                 <td>2008/11/28</td>
@@ -262,133 +262,6 @@
                                                 <td>$372,000</td>
                                             </tr>
                                             <tr>
-                                                <td>Herrod Chandler</td>
-                                                <td>Sales Assistant</td>
-                                                <td>San Francisco</td>
-                                                <td>59</td>
-                                                <td>2012/08/06</td>
-                                                <td>$137,500</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Rhona Davidson</td>
-                                                <td>Integration Specialist</td>
-                                                <td>Tokyo</td>
-                                                <td>55</td>
-                                                <td>2010/10/14</td>
-                                                <td>$327,900</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Colleen Hurst</td>
-                                                <td>Javascript Developer</td>
-                                                <td>San Francisco</td>
-                                                <td>39</td>
-                                                <td>2009/09/15</td>
-                                                <td>$205,500</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Sonya Frost</td>
-                                                <td>Software Engineer</td>
-                                                <td>Edinburgh</td>
-                                                <td>23</td>
-                                                <td>2008/12/13</td>
-                                                <td>$103,600</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Jena Gaines</td>
-                                                <td>Office Manager</td>
-                                                <td>London</td>
-                                                <td>30</td>
-                                                <td>2008/12/19</td>
-                                                <td>$90,560</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Quinn Flynn</td>
-                                                <td>Support Lead</td>
-                                                <td>Edinburgh</td>
-                                                <td>22</td>
-                                                <td>2013/03/03</td>
-                                                <td>$342,000</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Charde Marshall</td>
-                                                <td>Regional Director</td>
-                                                <td>San Francisco</td>
-                                                <td>36</td>
-                                                <td>2008/10/16</td>
-                                                <td>$470,600</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Haley Kennedy</td>
-                                                <td>Senior Marketing Designer</td>
-                                                <td>London</td>
-                                                <td>43</td>
-                                                <td>2012/12/18</td>
-                                                <td>$313,500</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Tatyana Fitzpatrick</td>
-                                                <td>Regional Director</td>
-                                                <td>London</td>
-                                                <td>19</td>
-                                                <td>2010/03/17</td>
-                                                <td>$385,750</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Michael Silva</td>
-                                                <td>Marketing Designer</td>
-                                                <td>London</td>
-                                                <td>66</td>
-                                                <td>2012/11/27</td>
-                                                <td>$198,500</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Paul Byrd</td>
-                                                <td>Chief Financial Officer (CFO)</td>
-                                                <td>New York</td>
-                                                <td>64</td>
-                                                <td>2010/06/09</td>
-                                                <td>$725,000</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Gloria Little</td>
-                                                <td>Systems Administrator</td>
-                                                <td>New York</td>
-                                                <td>59</td>
-                                                <td>2009/04/10</td>
-                                                <td>$237,500</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Bradley Greer</td>
-                                                <td>Software Engineer</td>
-                                                <td>London</td>
-                                                <td>41</td>
-                                                <td>2012/10/13</td>
-                                                <td>$132,000</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Dai Rios</td>
-                                                <td>Personnel Lead</td>
-                                                <td>Edinburgh</td>
-                                                <td>35</td>
-                                                <td>2012/09/26</td>
-                                                <td>$217,500</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Jenette Caldwell</td>
-                                                <td>Development Lead</td>
-                                                <td>New York</td>
-                                                <td>30</td>
-                                                <td>2011/09/03</td>
-                                                <td>$345,000</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Yuri Berry</td>
-                                                <td>Chief Marketing Officer (CMO)</td>
-                                                <td>New York</td>
-                                                <td>40</td>
-                                                <td>2009/06/25</td>
-                                                <td>$675,000</td>
-                                            </tr>
                                             <tr>
                                                 <td>Caesar Vance</td>
                                                 <td>Pre-Sales Support</td>
@@ -541,86 +414,7 @@
                                                 <td>2008/09/26</td>
                                                 <td>$645,750</td>
                                             </tr>
-                                            <tr>
-                                                <td>Olivia Liang</td>
-                                                <td>Support Engineer</td>
-                                                <td>Singapore</td>
-                                                <td>64</td>
-                                                <td>2011/02/03</td>
-                                                <td>$234,500</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Bruno Nash</td>
-                                                <td>Software Engineer</td>
-                                                <td>London</td>
-                                                <td>38</td>
-                                                <td>2011/05/03</td>
-                                                <td>$163,500</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Sakura Yamamoto</td>
-                                                <td>Support Engineer</td>
-                                                <td>Tokyo</td>
-                                                <td>37</td>
-                                                <td>2009/08/19</td>
-                                                <td>$139,575</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Thor Walton</td>
-                                                <td>Developer</td>
-                                                <td>New York</td>
-                                                <td>61</td>
-                                                <td>2013/08/11</td>
-                                                <td>$98,540</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Finn Camacho</td>
-                                                <td>Support Engineer</td>
-                                                <td>San Francisco</td>
-                                                <td>47</td>
-                                                <td>2009/07/07</td>
-                                                <td>$87,500</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Serge Baldwin</td>
-                                                <td>Data Coordinator</td>
-                                                <td>Singapore</td>
-                                                <td>64</td>
-                                                <td>2012/04/09</td>
-                                                <td>$138,575</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Zenaida Frank</td>
-                                                <td>Software Engineer</td>
-                                                <td>New York</td>
-                                                <td>63</td>
-                                                <td>2010/01/04</td>
-                                                <td>$125,250</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Zorita Serrano</td>
-                                                <td>Software Engineer</td>
-                                                <td>San Francisco</td>
-                                                <td>56</td>
-                                                <td>2012/06/01</td>
-                                                <td>$115,000</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Jennifer Acosta</td>
-                                                <td>Junior Javascript Developer</td>
-                                                <td>Edinburgh</td>
-                                                <td>43</td>
-                                                <td>2013/02/01</td>
-                                                <td>$75,650</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Cara Stevens</td>
-                                                <td>Sales Assistant</td>
-                                                <td>New York</td>
-                                                <td>46</td>
-                                                <td>2011/12/06</td>
-                                                <td>$145,600</td>
-                                            </tr>
+                                            
                                             <tr>
                                                 <td>Hermione Butler</td>
                                                 <td>Regional Director</td>
@@ -669,6 +463,8 @@
                                                 <td>2011/01/25</td>
                                                 <td>$112,000</td>
                                             </tr>
+                                             
+    
                                         </tbody>
                                     </table>
                                 </div>
@@ -688,6 +484,11 @@
     </div>
     <!-- End Wrapper -->
     <!-- All Jquery -->
+
+
+
+
+
     <script src="js/lib/jquery/jquery.min.js"></script>
     <!-- Bootstrap tether Core JavaScript -->
     <script src="js/lib/bootstrap/js/popper.min.js"></script>
@@ -711,6 +512,58 @@
     <script src="js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.html5.min.js"></script>
     <script src="js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.print.min.js"></script>
     <script src="js/lib/datatables/datatables-init.js"></script>
+    <script src="snapData.js"></script>
+
 </body>
 
+
+<script>
+    function CreateTableFromJSON() {
+       
+
+        // EXTRACT VALUE FOR HTML HEADER. 
+        // ('Book ID', 'Book Name', 'Category' and 'Price')
+        var col = [];
+        for (var i = 0; i < snapMember.length; i++) {
+            for (var key in snapMember[i]) {
+                if (col.indexOf(key) === -1) {
+                    col.push(key);
+                }
+            }
+        }
+
+        // CREATE DYNAMIC TABLE.
+        var table = document.createElement("table");
+        table.id = 'example23';
+        table.setAttribute("class","display nowrap table table-hover table-striped table-bordered");
+
+        // CREATE HTML TABLE HEADER ROW USING THE EXTRACTED HEADERS ABOVE.
+
+        var tr = table.insertRow(-1);                   // TABLE ROW.
+
+        for (var i = 0; i < col.length; i++) {
+            var th = document.createElement("th"); 
+
+                 // TABLE HEADER.
+            th.innerHTML = col[i];
+            tr.appendChild(th);
+        }
+
+        // ADD JSON DATA TO THE TABLE AS ROWS.
+        for (var i = 0; i < snapMember.length; i++) {
+
+            tr = table.insertRow(-1);
+
+            for (var j = 0; j < col.length; j++) {
+                var tabCell = tr.insertCell(-1);
+                tabCell.innerHTML = snapMember[i][col[j]];
+            }
+        }
+
+        // FINALLY ADD THE NEWLY CREATED TABLE WITH JSON DATA TO A CONTAINER.
+        var divContainer = document.getElementById("showData");
+        divContainer.innerHTML = "";
+        divContainer.appendChild(table);
+    }
+</script>
 </html>
