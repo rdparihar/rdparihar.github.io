@@ -32,6 +32,7 @@ var dataSet = [
 ["2029","Vaibhav Sarode","ADA","24-05-2018","Indore","vaibhav.sarode@snapsystems.in"],
 ["2030","Vinod Kumar","ADA","24-05-2018","Indore","vinod.kumar@snapsystems.in"]
 ]
+<<<<<<< HEAD
 
 /*
 
@@ -67,3 +68,5 @@ var dataSet = [
 ["2030","Vinod Kumar,"ADA","24-05-2018","Indore","vinod.kumar@snapsystems.in"]
 
 */
+=======
+>>>>>>> 5784f4ec4791d1c050605374d372ba2a4f0714c0
