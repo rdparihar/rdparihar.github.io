@@ -1,0 +1,13 @@
+/* Custom style for CloudBees Jenkins Platform */
+#header .logo {
+    background: url(http://snapsystems.in/wp-content/uploads/2018/03/Untitled-1.png) no-repeat 10px center;
+}
+
+#jenkins-home-link {
+    font-size:0;
+}
+
+#jenkins-home-link:after {
+  content: 'Jenkins. My instance';
+  font-size:20px;
+}
